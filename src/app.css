@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 body {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
     @apply bg-white dark:bg-black text-black dark:text-white text-center
+}
+
+input, textarea {
+    all: unset;
+    text-align: start;
+    @apply px-6 py-4 placeholder:text-black placeholder:dark:text-white
 }
 
 html,

@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { AvatarDark, AvatarLight } from "$lib";
 	import { darkMode } from "$lib/stores/stores";
-	import { quintInOut } from "svelte/easing";
-	import { crossfade } from "svelte/transition";
 
 	let isDarkMode = false;
 
