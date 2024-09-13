@@ -1,1 +1,0 @@
-import{w as a}from"./index.M7WuUczP.js";function i(e="",s=void 0){const t=localStorage.getItem(e),o=a(t?JSON.parse(t):s);return o.subscribe(r=>{r===void 0?localStorage.removeItem(e):localStorage.setItem(e,JSON.stringify(r))}),o}const c=i("dark",!1);export{c as d};
