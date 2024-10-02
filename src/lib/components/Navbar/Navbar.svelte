@@ -17,11 +17,11 @@
 			text: "Sobre",
 			onClick: () => scrollInto("sobre"),
 		},
-		{
-			href: "#experiencias",
-			text: "Experiências",
-			onClick: () => scrollInto("experiencias"),
-		},
+		// {
+		// 	href: "#experiencias",
+		// 	text: "Experiências",
+		// 	onClick: () => scrollInto("experiencias"),
+		// },
 		{
 			href: "#projetos",
 			text: "Projetos",
