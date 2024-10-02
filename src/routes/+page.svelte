@@ -1,10 +1,19 @@
 <script lang="ts">
-	import { ContactContainer } from "$lib";
+	import {
+		AboutContainer,
+		ContactContainer,
+		ExperienceContainer,
+		HeroContainer,
+		ProjectsContainer,
+	} from "$lib";
 </script>
 
 <div class="flex flex-col flex-1">
-	<h1>Bem vindo à minha página</h1>
-	<div class="flex flex-col">
+	<div class="flex flex-col gap-20">
+		<HeroContainer />
+		<AboutContainer />
+		<!-- <ExperienceContainer /> -->
+		<ProjectsContainer />
 		<ContactContainer />
 	</div>
 </div>

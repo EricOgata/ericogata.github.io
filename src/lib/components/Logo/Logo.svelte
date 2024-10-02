@@ -9,7 +9,7 @@
 	});
 </script>
 
-<div class="w-20">
+<div class="min-w-20 min-h-20 w-20 h-20">
 	{#if isDarkMode}
 		<AvatarDark />
 	{:else}

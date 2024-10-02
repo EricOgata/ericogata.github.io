@@ -8,6 +8,9 @@ import TextInput from './TextInput/TextInput.svelte';
 import TextAreaInput from './TextAreaInput/TextAreaInput.svelte';
 import Button from './Button/Button.svelte';
 import LinkButton from './LinkButton/LinkButton.svelte';
+import ContainerWrapper from './ContainerWrapper/ContainerWrapper.svelte';
+import PictureWrapper from './PictureWrapper/PictureWrapper.svelte';
+import ProjectWrapper from './ProjectWrapper/ProjectWrapper.svelte';
 
 export * from './Icons';
 
@@ -22,4 +25,7 @@ export {
     TextAreaInput,
     Button,
     LinkButton,
+    ContainerWrapper,
+    PictureWrapper,
+    ProjectWrapper,
 };

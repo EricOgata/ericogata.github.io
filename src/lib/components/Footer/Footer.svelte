@@ -3,7 +3,7 @@
 	import SocialsLink from "../SocialsLink/SocialsLink.svelte";
 </script>
 
-<div class="flex justify-between items-center">
+<div class="my-10 flex justify-between items-center">
 	<div class="flex gap-2">
 		<SocialsLink link="https://github.com/EricOgata">
 			<GithubIcon slot="icon" />
@@ -17,4 +17,3 @@
 	</div>
 	<span class="text-xs">© 2024 Eric Ogata. Todos os direitos reservados.</span>
 </div>
-<!-- <ContactContainer /> -->

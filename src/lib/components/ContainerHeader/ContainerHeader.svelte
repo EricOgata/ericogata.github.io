@@ -10,11 +10,11 @@
 	<h2 class="text-5xl">{title}</h2>
 </div> -->
 <h2
-	class="text-4xl relative before:absolute before:dark:bg-white before:bg-black before:content-[' ']
-    before:w-[64px] before:h-[2px] before:bottom-0 before:left-0 before:translate-x-0 before:translate-y-1"
+	class="mb-4 text-4xl relative before:absolute before:dark:bg-white before:bg-black before:content-[' ']
+    before:w-[64px] before:h-[2px] before:bottom-0 before:left-0 before:translate-x-0 before:translate-y-1 text-left"
 >
 	{prefix}
-	<span class="font-extrabold">
+	<span class="font-extrabold inline-block">
 		{title}
 	</span>
 </h2>

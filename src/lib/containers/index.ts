@@ -3,6 +3,8 @@ import AboutContainer from './About/About.svelte';
 import ArticlesContainer from './Articles/Articles.svelte';
 import ProjectsContainer from './Projects/Projects.svelte';
 import SkillsContainer from './Skills/Skills.svelte';
+import ExperienceContainer from './Experience/Experience.svelte';
+import HeroContainer from './Hero/Hero.svelte';
 
 export {
     ContactContainer,
@@ -10,4 +12,6 @@ export {
     ArticlesContainer,
     ProjectsContainer,
     SkillsContainer,
+    ExperienceContainer,
+    HeroContainer,
 }

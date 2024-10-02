@@ -4,6 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    /* Glassmorphism */
+    /* inspired by Glass UI Glassmorphism generator (https://ui.glass/generator/) */
+    --as-toast-border: 1px solid rgba(209, 213, 219, 0.3);
+    --as-toast-backdrop-filter: blur(8px);
+    --as-toast-shadow:
+        0px 1.4px 2.2px rgba(0, 0, 0, 0.028),
+        0px 4.7px 7.4px rgba(0, 0, 0, 0.042),
+        0px 21px 33px rgba(0, 0, 0, 0.07);
+    --as-toast-btn-border: none;
+    --as-toast-info-border-color: rgba(209, 213, 219, 0.3);
+    --as-toast-info-background: rgba(255, 255, 255, 0.7);
+    --as-toast-warn-border-color: hsl(0, 68%, 47%, 30%);
+    --as-toast-warn-background: hsla(0, 69%, 80%, 0.7);
+}
 
 body {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -24,4 +39,71 @@ html,
 body,
 #root {
     @apply min-h-full h-full
+}
+
+p {
+    @apply leading-relaxed
+}
+
+.gradient-background {
+    background: conic-gradient(#FF2E2E,
+            #FF831E,
+            #FCFF51,
+            #58FF57,
+            #575FFF,
+            #D257FF,
+            #FF57E5,
+            #FF1556);
+}
+
+label.hamburger-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+label.hamburger-button input[type="checkbox"] {
+    display: none;
+}
+
+label.hamburger-button input[type="checkbox"]:checked~span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(8px, 0px)
+}
+
+
+label.hamburger-button input[type="checkbox"]:checked~span:nth-of-type(2) {
+
+    transform-origin: top;
+    transform: rotatez(-45deg)
+}
+
+
+label.hamburger-button input[type="checkbox"]:checked~span:nth-of-type(3) {
+
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(26px, -8px) rotatez(45deg);
+
+}
+
+label.hamburger-button span {
+    border-radius: 10px;
+    height: 7px;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    @apply bg-black dark:bg-white
+}
+
+label.hamburger-button span:nth-of-type(1) {
+    width: 50%;
+}
+
+label.hamburger-button span:nth-of-type(2) {
+    width: 100%;
+}
+
+label.hamburger-button span:nth-of-type(3) {
+    width: 75%;
 }
