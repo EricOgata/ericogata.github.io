@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 24 24"
+	width="inhherit"
+	height="inherit"
+>
 	<path
 		fill="none"
 		stroke="currentColor"

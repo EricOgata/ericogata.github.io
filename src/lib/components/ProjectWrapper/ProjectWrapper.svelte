@@ -4,7 +4,7 @@
 	export let index: number = 0;
 	export let title: string = "";
 	export let description: string = "";
-	export let link: string = "";
+	export let link: string = "/";
 	export let thumbnail: string = "";
 	export let tecnologies: string[] = [];
 </script>

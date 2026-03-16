@@ -8,8 +8,9 @@
 	text-white
 	dark:bg-white
 	dark:text-black"
-	href="/CV_2024.pdf"
+	href="/CV.pdf"
 	download="Eric_Ogata-CV"
+	title="Baixar CV"
 >
 	<div class="flex align-middle gap-2">
 		<slot name="text" />

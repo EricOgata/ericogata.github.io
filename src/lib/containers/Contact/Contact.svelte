@@ -12,17 +12,21 @@
 	} from "$lib/components";
 
 	// TODO: Trigger submit event by AJAX;
-	function submitForm(event) {
+	function submitForm(event: SubmitEvent) {
 		if (!browser) return;
-		console.log(event.target.action);
-		let name: string | null =
-			document.getElementById("contact_form_name")?.value;
-		let email: string | null =
-			document.getElementById("contact_form_email")?.value;
-		let site: string | null =
-			document.getElementById("contact_form_site")?.value;
-		let message: string | null = document.getElementById(
-			"contact_form_message"
+		let name: string | null = (
+			document.getElementById("contact_form_name") as HTMLInputElement
+		)?.value;
+		let email: string | null = (
+			document.getElementById("contact_form_email") as HTMLInputElement
+		)?.value;
+		let site: string | null = (
+			document.getElementById("contact_form_site") as HTMLInputElement
+		)?.value;
+		let message: string | null = (
+			document.getElementById(
+				"contact_form_message",
+			) as HTMLTextAreaElement
 		)?.value;
 
 		let data = {
@@ -32,7 +36,7 @@
 			message,
 		};
 
-		fetch(event.target.action, {
+		fetch((event.target as HTMLFormElement).action, {
 			method: "post",
 			body: JSON.stringify(data),
 			headers: {
@@ -44,13 +48,13 @@
 					return addToast(
 						"Mensagem enviada com sucesso! Agora é só aguardar.",
 						"info",
-						3000
+						3000,
 					);
 				}
 				return addToast(
 					"Opss.. Algo aconteceu. Mas tudo bem, você sempre pode tentar novamente.",
 					"warn",
-					3000
+					3000,
 				);
 			})
 			.catch(() => {});
